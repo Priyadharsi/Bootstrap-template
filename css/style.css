@@ -1,0 +1,73 @@
+.about li{
+	list-style: none;
+
+}
+.banner-section{
+	background-image: linear-gradient(rgb(255 255 255 / 23%),rgb(255 255 255 / 88%)), url(../image/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	background-attachment: fixed;
+	padding: 94px 0 40px;
+	
+}
+
+.bg-light{
+	background-color: #eaf0f5 !important;
+}
+.clients{
+	padding: 26px 20px;
+}
+.text-primary{
+	color: #96a7bf !important;
+}
+.content ul li{
+	list-style: none;
+}
+.logos{
+	padding: 40px 20px;
+}
+.logos img{
+    filter: grayscale(100%);
+}
+.test-box p{
+	padding: 10px 20px;
+	
+}
+.matt{
+	padding: 11px 48px;
+	/* margin: 2px 28px; */
+	
+}
+.service-menu{
+	padding: 20px 30px;
+}
+/* .call-section .bg-light{
+	background-color: #eaf0f5 !important;
+} */
+.text-info{
+	color: #6445a3 !important;
+}
+.policy i{
+	color: blue !important;
+}
+.policy li{
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+.loc-icon .bg-primary{
+	background-color: #0d6efd4d !important;
+}
+.loc-icon i{
+	width: 44px;
+	height: 44px;
+	text-align: center;
+}
+.loc{
+	margin: -4px 39px;
+}
+/* .loc .text-primary{
+	color: #33d1e1; !important;
+} */
+	
