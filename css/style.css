@@ -9,12 +9,17 @@
 	line-height: 26px;
 }
 .header{
-	
-	/* padding: 24px 0; */
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+	z-index: 99;
+	background-color: #fff;
+	border-bottom: 1px solid #e6f2fb;
+}
+.nav-menu .nav-bar{
+	text-align: center;
+	padding: 16px;
 }
 /* .header-logo a{
 	color: #16507b !important;
@@ -77,16 +82,22 @@
 .nav-menu li{
 	display: inline-block;
 }
-.nav-menu{
+/* .nav-menu{
 	align-items: center;
-}
+	padding: 3px 18px;
+} */
 .nav-menu a{
     color: #16507b;
 }	
 .nav-menu a:hover{
 	color: #469fdf;
 }
-	
+.nav-button{
+    padding: 12px 0;
+}
+.nav-bar .active{
+    color: #2487ce;
+}
 .btn{
    background: #2487ce!important;
 }
@@ -106,20 +117,21 @@
 	color: #16507b !important;
 }
 .banner-section{
-	background-image: linear-gradient(rgb(255 255 255 / 23%),rgb(255 255 255 / 88%)), url(../image/hero-bg.jpg);
+	/* padding: 0  40px; */
+	background-image: linear-gradient(rgb(255 255 255 / 88%),rgb(255 255 255 / 88%)), url(../image/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-position: top;
 	background-attachment: fixed;
-	padding: 94px 0 40px;
+	padding: 168px 0 0 0;
 	
 }
 .lorem{
 	padding: 10px 14px;
 }
 .lorem p{
-    font-size: 16px;
+    font-size: 15px;
 	line-height: 28px;
 }	
 .lorem i{
@@ -177,7 +189,7 @@
 	text-decoration: none;
 }
 .call-btn{
-	padding: 0 12px;
+	padding: 12px 50px 46px;
 }
 .action{
 	color:  #fff;
@@ -206,11 +218,26 @@
 .clients{
 	padding: 26px 20px;
 }
+.about-section{
+	padding: 40px 0;
+}
+.about{
+	padding: 0;
+}
+.ad-section{
+	padding: 30px 0;
+}
+.ad-list{
+    padding: 0;
+}
 .clients-section{
 	background-color: #f8fbfe!important;
 }
 .logo-section{
 	background-color: #f8fbfe!important;
+}
+.testimonials-section{
+	padding: 20px 0;
 }
 .question-section{
 	background-color: #f8fbfe!important;
@@ -325,10 +352,12 @@
 }
 .call-section{
 	background: #2487ce;
+	/* padding: 40px 0; */
 }
 .call{
 	font-size: 32px;
 	font-weight: 700;
+	padding-top: 22px;
 }
 .web1{
 	font-size: 16px;
@@ -359,10 +388,12 @@
 	left: 0; 
 	width: 100%;
 	height: 100%;
-    background-color: rgb(129 180 231 / 66%);
+	text-align: center;
+    background-color: rgb(129 180 231 / 88%);
 	display: flex;
+	justify-content: center; 
 	align-items: center;
-	padding: 10px 10px 20px;
+	/* padding: 10px 10px 20px; */
     opacity: 0;
 	visibility: hidden;
     transition: all 0.5s ease;	
@@ -404,9 +435,9 @@
 	position: relative;
 	z-index: 1;
 }
- .port-box-text{
+ /* .port-box-text{
 	padding: 22px 136px;
-} 
+}  */
  .port-box-text h4{
 	font-size: 20px;
 	font-weight: 600;
@@ -425,7 +456,7 @@
 	text-decoration: none;
 	color: rgb(235 235 235 / 68%);
 	font-size: 20px;
-	margin-right: 10px;
+	padding: 0 6px;
 	font-weight: 200;
 	
 }
@@ -439,12 +470,23 @@
 }
 .portfolio:hover img{
 	transform: scale(1.2);
-	overflow: hidden
+	overflow: hidden;
+	/* position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	border-left: solid 3px #fff;
+	border-top: solid 3px #fff;
+	transition: all 0.2s ease; */
 }
 .volume{
 	font-size: 17px;
-	padding: 8px 13px;
+	padding: 12px 13px;
 }
+/* .btn-close{
+	background: none;
+} */
 .button{
 	padding-bottom: 26px;
 }
@@ -526,6 +568,8 @@
 }
 .logos img{
     filter: grayscale(100%);
+	opacity: 0.5;
+    transition: all 0.3s ease;	
 }
 .test{
 	color: #124265 !important;
@@ -610,6 +654,13 @@
 }
 .card-title{
 	color: #124625 !important;
+	padding: 22px;
+}
+.card-buy{
+	padding: 22px;
+}
+.price-btn{
+	padding-bottom: 20px;
 }
 .rupees{
 	/* font-size: 12px; */
@@ -625,6 +676,9 @@
 	font-size: 14px;
 	color: #bababa !important;
 }
+/* .card-num{
+	padding-top: 20px;
+} */
 .card-text{
 	font-size: 14px;
 }
@@ -642,7 +696,7 @@
 	font-size: 14px;
 }
 .newyork{
-	background-color: #f8fbfe;
+	background-color: #e3f0fa;
 	color: blue;
 }
 .loc-icon i:hover{
@@ -689,6 +743,9 @@
 .foot{
 	color: #24874e;
 }
+.policy{
+	padding: 0;
+}
 .policy a{
 	color: #444444;
 }
@@ -699,10 +756,21 @@
 /* .footer-section{
 	background-color: rgb(128 128 128 / 3%);
 } */
-.accordion-header{
+/* .accordion-header{
 	color: black;
 	font-size: 14px;
 	display: block;
+} */
+.accordion-header{
+	color: #343a40;
+}
+.accordion-icon{
+	color: blue;
+}
+.footer-section{
+	background: #fff;
+	padding: 44px 0;
+	box-shadow: 0 2px 6px rgb(128 128 128 / 57%);
 }
 .footer-icons{
 	padding: 0 26px;

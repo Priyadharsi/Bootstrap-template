@@ -9,20 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/reset.css"> 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <!---------------------Header section---------------------------------------->
-<section class="header mt-3">
+<section class="header">
     <div class="container">
 	    <div class="row">
-		    <div class="col-lg-3 header-logo">
+		    <div class="col-lg-2 header-logo p-2">
 			    <a href="#" class=" text-decoration-none py-1 fw-normal"><h1>OnePage</h1></a>
 			</div>
-		    <div class="col-lg-7">
-		        <div class="nav-menu">
-				  <ul>
+		    <div class="col-lg-8">
+			<div class="nav-menu d-none d-lg-block">
+			
+			<!-- <div class="menu-button d-block d-lg-none">
+			  <a class="btn fs-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+			   <i class="fa fa-bars" aria-hidden="true"></i>
+			   </a>
+			   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExamplelabel">
+			   <div class="offcanvas-header">
+			        <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="close"></button>
+				</div>
+				<div class="offcanvas-body">
+		         -->
+				  <ul class="nav-bar">
 				    <li><a class="ms-3 text-decoration-none active" aria-current="page" href="#">Home</a></li>
 					<li><a class="ms-3 text-decoration-none" href="#">About</a><li>
 					<li><a class="ms-3 text-decoration-none" href="#">Services</a><li>
@@ -50,8 +62,10 @@
 					</li>
 					<li><a class="ms-3 text-decoration-none" href="#">Contact</a><li>
 				  </ul>
-		        </div>
+		        <!-- </div>
+				</div> -->
 		    </div>
+			</div>
 		    <div class="col-lg-2">
 		        <div class="nav-button">
 				<button type="button" class="btn btn-primary px-3 py-1">
@@ -61,6 +75,8 @@
 		    </div>
 		</div>
     </div>
+  <!--  </div>
+  </div> -->
 </section>
 <!---------------------Header section end---------------------------------------->
 <!---------------------Banner section---------------------------------------->
@@ -76,32 +92,32 @@
 				</button>
         	</div>	
             </div>
-		<div class="row">
-		   <div class="col-lg-3 mt-3"> 
-		     <div class="lorem bg-body rounded p-5 mb-5">
-			    <i class="fa fa-database pb-3 pe-5 mt-3" aria-hidden="true"></i>
-				<h5 class="Data fw-bold">Lorem Ipsum</h5>
+		<div class="row p-5">
+		   <div class="col-lg-3 col-md-6 mt-3"> 
+		     <div class="lorem bg-body rounded p-4 mb-4">
+			    <i class="fa fa-database pb-4 pt-4" aria-hidden="true"></i>
+				<h5 class="Data fw-bold pb-2">Lorem Ipsum</h5>
 				<p class="fw-normal">Voluptateum delentiti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>	
             </div>		
-            <div class=" col-lg-3 mt-3">
-		     <div class="lorem  bg-body rounded p-5 mb-5">
-			    <i class="fa fa-tachometer pb-3 pe-5 mt-3" aria-hidden="true"></i>
-				<h5 class="Data fw-bold">Sed ut perspiciatis</h5>
+            <div class=" col-lg-3 col-md-6 mt-3">
+		     <div class="lorem  bg-body rounded p-4 mb-4">
+			    <i class="fa fa-tachometer pb-4 pt-4" aria-hidden="true"></i>
+				<h5 class="Data fw-bold pb-2">Sed ut perspiciatis</h5>
 				<p class="fw-normal">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>	
             </div>		
-            <div class="col-lg-3 mt-3">
-		     <div class="lorem bg-body rounded p-5 mb-5">
-			    <i class="fa fa-object-ungroup pb-3 pe-5 mt-3" aria-hidden="true"></i>
-				<h5 class="Data fw-bold">Magni Dolores</h5>
+            <div class="col-lg-3 col-md-6 mt-3">
+		     <div class="lorem bg-body rounded p-4 mb-4">
+			    <i class="fa fa-object-ungroup pb-4 pt-4" aria-hidden="true"></i>
+				<h5 class="Data fw-bold pb-2">Magni Dolores</h5>
 				<p class="fw-normal">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>	
             </div>		
-            <div class="col-lg-3 mt-3">
-		     <div class="lorem bg-body rounded p-5 mb-5">
-			    <i class="fa fa-500px pb-3 pe-5 mt-3" aria-hidden="true"></i>
-				<h5 class="Data fw-bold">Nemo Enim</h5>
+            <div class="col-lg-3 col-md-6 mt-3">
+		     <div class="lorem bg-body rounded p-4 mb-4">
+			    <i class="fa fa-500px pb-4 pt-4" aria-hidden="true"></i>
+				<h5 class="Data fw-bold pb-2">Nemo Enim</h5>
 				<p class="fw-normal">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>	
             </div>	
@@ -142,19 +158,19 @@
 <section class="clients-section mt-5 p-3 mb-2">
     <div class="container">
 	    <div class="row text-center mt-3 clients">
-		    <div class="col-lg-3">
+		    <div class="col-6 col-lg-3">
 			    <h5 class="num px-4">65</h5>
 				<h6 class="awards">Happy Clients</h6>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-6 col-lg-3">
 			    <h5 class="num px-3">85</h5>
 				<h6 class="awards">Projects</h6>
 			</div>
-			<div class="col-lg-3">
-			    <h5 class="num px-5">30</h5>
+			<div class="col-6 col-lg-3">
+			    <h5 class="num px-3">30</h5>
 				<h6 class="awards">Years of experience</h6>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-6 col-lg-3">
 			    <h5 class="num px-3">20</h5>
 				<h6 class="awards">Awards</h6>
 			</div>
@@ -173,7 +189,7 @@
 			     <div class="content">
 				    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
 			        <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>	
-      			    <ul>
+      			    <ul class="ad-list">
 				        <li><i class="fa fa-check check" aria-hidden="true"></i>  Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
 						<li><i class="fa fa-check check" aria-hidden="true"></i>  Duis aute irure dolor in reprehenderit in voluptate velit.</li>
 						<li><i class="fa fa-check check" aria-hidden="true"></i>  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
@@ -187,34 +203,34 @@
 <section class="logo-section mt-5 p-1 mb-1">
     <div class="container">
 	    <div class="row logos">
-		    <div class="col-lg-2">
+		    <div class="col-lg-2 col-6 col-md-4">
 			        <a href="#" class="client-logo">
-				    <img src="image/clients/client-1.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-1.png" class="w-50 h-auto pb-2" alt="user picture">
 				    </a>
 				</div>
-			 <div class="col-lg-2">
+			 <div class="col-lg-2 col-6 col-md-4">
 			        <a href="#" class="client-logo">
-				    <img src="image/clients/client-2.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-2.png" class="w-50 h-auto pb-2" alt="user picture">
 					</a>
 				</div>
-			 <div class="col-lg-2">
+			 <div class="col-lg-2 col-6 col-md-4">
 			         <a href="#" class="client-logo">
-				    <img src="image/clients/client-3.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-3.png" class="w-50 h-auto pb-2" alt="user picture">
 				    </a>
 				</div>
-			 <div class="col-lg-2">
+			 <div class="col-lg-2 col-6 col-md-4">
 			         <a href="#" class="client-logo">
-				    <img src="image/clients/client-4.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-4.png" class="w-50 h-auto pb-2" alt="user picture">
 				    </a>
 				</div>
-			 <div class="col-lg-2">
+			 <div class="col-lg-2 col-6 col-md-4">
 			        <a href="#" class="client-logo">
-				    <img src="image/clients/client-5.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-5.png" class="w-50 h-auto pb-2" alt="user picture">
 				    </a>
 				</div>
-			 <div class="col-lg-2">
+			 <div class="col-lg-2 col-6 col-md-4">
 			        <a href="#" class="client-logo">
-				    <img src="image/clients/client-6.png" class="w-50 h-auto" alt="user picture">
+				    <img src="image/clients/client-6.png" class="w-50 h-auto pb-2" alt="user picture">
 				    </a>
 				</div>
 		</div>
@@ -223,7 +239,7 @@
 <section class="testimonials-section mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center fs-7">
+            <div class="col-lg-12 text-center">
                 <div class="test-content">
                     <h3 class="test">Testimonials</h3>
                     <p class="para">Magnam dolores commodi suscript.Neceesaitatibus consequatur ex aliquid fuga eum quidem.sit sint consecteur velit.Quisam quos quisqusm cuplidate. et nemo qui imedit sus cojm sgh  ea.qiua fugait ishn sit officiald quidem hiv quas.</p>
@@ -231,9 +247,9 @@
             </div>
 		</div>
 		<div class="row">
-		  <div id="carouselExamplesslide" class="carousel slide" data-bs-ride="carousel">
-		   <div class="carousel-inners">
-		    <div class="col-lg-4 carousel-item active">
+		  <!-- <div id="carouselExamplesslide" class="carousel slide" data-bs-ride="carousel">
+		   <div class="carousel-inners"> -->
+		    <div class="col-lg-4"><!-- carousel-item active -->
 			    <div class="test-box  bg-body rounded p-3 mb-2 p-3 mb-5 fs-7">
 			    
 			     <p><i class="fa fa-quote-left quote-up" aria-hidden="true"></i> <i class="p-2 slide fw-normal">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos expot minm fugiat minim dolor enim dui enim veniam ipsum anim man=gna sunt elit fore quem dolore labore illum venam</i><i class="fa fa-quote-right p-1 quote-down" aria-hidden="true"></i></p>
@@ -245,7 +261,7 @@
 				 </div>
 				</div>
 			  
-			 <div class="col-lg-4 carousel-item">
+			 <div class="col-lg-4"> <!-- carousel-item" -->
 			    <div class="test-box  bg-body rounded p-3 mb-2 p-3 mb-5 fs-7">
 				    <p><i class="fa fa-quote-left quote-up" aria-hidden="true"></i> <i class="p-2 slide fw-normal"> Quis quearum aliqua sint quem legam sunt eram aliqua veniam tempor noster veniam enim culpa enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore</i><i class="fa fa-quote-right p-1 quote-down" aria-hidden="true"></i></p>
 					</div>
@@ -256,11 +272,11 @@
 					</div>
 				</div>
 			
-			<div class="col-lg-4 carousel-item">
+			<div class="col-lg-4"> <!-- carousel-item"> -->
 			    <div class="test-box bg-body rounded p-3 mb-5 p-3 mb-2 fs-7">
 				    <p><i class="fa fa-quote-left quote-up" aria-hidden="true"></i> <i class="p-2 slide fw-normal"> Proin iaculis purus consequat sem cure digni ssim donec porttitorea entum suscipit rhonus.Accusantium quam,ultrices eget id,aliquam eget nibh et.Maecen aliquam ,risus at semper.</i><i class="fa fa-quote-right p-1 quote-down" aria-hidden="true"></i></p>
 				     </div>
-					 <div class="matt text-color">
+					 <div class="matt text-center">
 					    <img src="image/testimonals/testimonials-1.jpg" class="rounded-circle brand" alt="user-picture">
 						<h4 class="p-2 saul">Saul Goodman</h4>
 						<h6 class="fw-normal free">Ceo & Founder</h6>
@@ -269,94 +285,55 @@
            
 		</div>
 		</div>
-		 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-       <!--  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button> -->
-		<!-- <div class="row">
-		    <div class="col-lg-4 text-center">
-			    <div class="matt">
-				   <img src="image/testimonals/testimonials-4.jpg" class="rounded-circle brand" alt="user-picture">
-				   <h4 class="p-2 saul">Matt Brandson</h4>
-				   <h6 class="fw-normal free">Freelancer</h6>
-				 </div>
-				</div>
-				<div class="col-lg-4 text-center">
-				    <div class="matt">
-					    <img src="image/testimonals/testimonials-5.jpg" class="rounded-circle brand" alt="user-picture">
-						<h4 class="p-2 saul">John Larson</h4>
-						<h6 class="fw-normal free">Entrepreneur</h6>
-					</div>
-				</div>
-				<div class="col-lg-4 text-center">
-				    <div class="matt">
-					    <img src="image/testimonals/testimonials-1.jpg" class="rounded-circle brand" alt="user-picture">
-						<h4 class="p-2 saul">Saul Goodman</h4>
-						<h6 class="fw-normal free">Ceo & Founder</h6>
-					</div>
-				</div> -->
-				<!-- <div class="dots">
-				    <span class="dots-box active"></span>
-					<span class="dots-box"></span>
-					<span class="dots-box"></span>
-					<span class="dots-box"></span>
-					<span class="dots-box"></span>
-		        </div> -->
-			</div>
-		</div>	
 	
 </section>
-<section class="service-section p-3 mb-2 bg-light mt-5">
+<section class="service-section p-3 bg-light mt-5">
     <div class="container">
 	    <div class="row">
 		    <div class="col-lg-12 text-center">
 			    <div class="service-content">
 				    <h3 class="test">SERVICES</h3>
-					<p class="para">Magnam dolores commodi suscript.Neceesaitatibus consequatur ex aliquid fuga eum quidem.sit sint consecteur velit.Quisam quos quisqusm cuplidate. et nemo qui imedit sus cojm sgh  ea.qiua fugait ishn sit officiald quidem hiv quas.</p>
+					<p class="para fs-6">Magnam dolores commodi suscript.Neceesaitatibus consequatur ex aliquid fuga eum quidem.sit sint consecteur velit.Quisam quos quisqusm cuplidate. et nemo qui imedit sus cojm sgh  ea.qiua fugait ishn sit officiald quidem hiv quas.</p>
 				</div>
 			</div>
 	    </div>
 		<div class="row text-center">
-		   <div class="col-lg-4 service-box">
+		   <div class="col-lg-4 col-md-6 service-box">
 		      <div class="service-menu bg-body rounded mb-3 p-5">
                     <i class="fa fa-empire service-icon rounded-circle p-4 mt-3 mb-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Lorem Ipsum</h5>
                     <p class="moles">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
               </div>
             </div>
-			  <div class="col-lg-4">
+			  <div class="col-lg-4 col-md-6">
 		      <div class="service-menu bg-body rounded p-5 mb-3">
                     <i class="fa fa-file-text service-icon1 rounded-circle p-4 mt-3 mb-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Sed ut perspiciatis</h5>
                     <p class="moles">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
               </div>
             </div>
-			 <div class="col-lg-4">
+			 <div class="col-lg-4 col-md-6">
 		      <div class="service-menu bg-body rounded p-5 mb-3">
                     <i class="fa fa-tachometer  service-icon2 rounded-circle p-4 mb-3 mt-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Magni Dolores</h5>
                     <p class="moles">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
               </div>
             </div>
-			 <div class="col-lg-4">
+			 <div class="col-lg-4 col-md-6">
 		      <div class="service-menu bg-body rounded p-5 mb-3">
                     <i class="fa fa-globe  service-icon3 rounded-circle p-4 mt-3 mb-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Nemo Enim</h5>
                     <p class="moles">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
               </div>
             </div>
-			 <div class="col-lg-4">
+			 <div class="col-lg-4 col-md-6">
 		      <div class="service-menu bg-body rounded p-5 mb-3">
                     <i class="fa fa-television  service-icon4 rounded-circle p-4 mb-3 mt-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Dele cardo</h5>
                     <p class="moles">Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
               </div>
             </div>
-			 <div class="col-lg-4">
+			 <div class="col-lg-4 col-md-6">
 		      <div class="service-menu bg-body rounded p-5 mb-3">
                     <i class="fa fa-home  service-icon5 rounded-circle p-4 mt-3 mb-3" aria-hidden="true"></i>
                     <h5 class="one fs-4">Divera don</h5>
@@ -366,14 +343,14 @@
 		   </div>
 	    </div>
 	</section>
-<section class="call-section text-center p-3 mb-2 mt-5">
+<section class="call-section text-center pt-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="call-content text-white">
                     <h5 class="call">Call To Action</h5>
-                    <p class="volume">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
-			    <div class="call-btn mb-4">
+                    <p class="volume fs-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>					
+			    <div class="call-btn">
 						<a href="#" class="action text-decoration-none">Call To Action</a>
 			    </div>
 				</div>
@@ -387,7 +364,7 @@
 		    <div class="col-lg-12">
 			    <div class="port-content">
 				    <h3 class="test">PORTFOLIO</h3>
-					<p class="para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br> sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="para fs-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 			</div>
 		</div>
@@ -398,7 +375,7 @@
 				<a href="#" class="p-3  text-decoration-none">WEB</a>
 			</div>
 			<div class="row">
-			    <div class="col-lg-4">
+			    <div class="col-lg-4 col-md-6">
 				    <div class="portfolio mb-3">
 					    <img src="image/portfolio/portfolio-1.jpg" class="w-100 height-auto" alt="user-picture">
 						<div class="port-box">
@@ -413,8 +390,47 @@
 						</div>
 						
 					</div>
-					
+					<div class="portfolio mb-3 d-md-block d-none d-lg-none">
+					  <img src="image/portfolio/portfolio-4.jpg" class="w-100 height-auto" alt="user-picture">
+					    <div class="port-box">
+						    <div class="port-box-text">
+							    <h4>App 3</h4>
+								<h5 class="text-white">APP</h5>
+							    <div class="port-icons">
+								    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						</div>
 					<div class="portfolio">
+					  <img src="image/portfolio/portfolio-6.jpg" class="w-100 height-auto" alt="user-picture">
+					    <div class="port-box">
+						    <div class="port-box-text">
+							    <h4>App 3</h4>
+								<h5 class="text-white">APP</h5>
+							    <div class="port-icons">
+								    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						</div>
+				    <div class="portfolio mb-3 d-md-block d-none d-lg-none">
+					  <img src="image/portfolio/portfolio-8.jpg" class="w-100 height-auto" alt="user-picture">
+					    <div class="port-box">
+						    <div class="port-box-text">
+							    <h4>App 3</h4>
+								<h5 class="text-white">APP</h5>
+							    <div class="port-icons">
+								    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- <div class="portfolio">
 					     <img src="image/portfolio/portfolio-6.jpg" class="w-100 height-auto" alt="user-picture">
 						<div class="port-box">
 						    <div class="port-box-text">
@@ -427,10 +443,10 @@
 							</div>
 						</div>
 					</div> 
-				</div>
+				</div> -->
 			
-				 <div class="col-lg-4">
-				    <div class="portfolio mb-3">
+				 <div class="col-lg-4 col-md-6">
+				    <div class="portfolio mb-2">
 					    <img src="image/portfolio/portfolio-2.jpg" class="w-100 height-auto" alt="user-picture">
 						<div class="port-box">
 						    <div class="port-box-text">
@@ -444,8 +460,8 @@
 						</div>
 					</div> 
 					
-					<div class="portfolio mb-3">
-					     <img src="image/portfolio/portfolio-5.jpg" class="w-100 height-auto" alt="user-picture">
+					<div class="portfolio mb-3 d-none d-lg-none d-md-block">
+					     <img src="image/portfolio/portfolio-3.jpg" class="w-100 height-auto" alt="user-picture">
 						 <div class="port-box">
 						    <div class="port-box-text">
 							    <h4>Web 2</h4>
@@ -459,7 +475,7 @@
 					</div> 
 			
                     <div class="portfolio">
-                       	<img src="image/portfolio/portfolio-9.jpg" class="w-100 height-auto" alt="user-picture">
+                       	<img src="image/portfolio/portfolio-5.jpg" class="w-100 height-auto" alt="user-picture">
 						<div class="port-box">
 						    <div class="port-box-text">
 							    <h4>Web 3</h4>
@@ -471,7 +487,33 @@
 							</div>
 						</div>
 					</div> 
-				</div>				
+					<!-- <div class="portfolio d-md-block d-none d-lg-none">
+                       	<img src="image/portfolio/portfolio-9.jpg" class="w-100 height-auto" alt="user-picture">
+						<div class="port-box">
+						    <div class="port-box-text">
+							    <h4>APP 2</h4>
+								<h5 class="text-white">App</h5>
+							    <div class="port-icons">
+								    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>  -->
+					 <div class="portfolio">
+                       	<img src="image/portfolio/portfolio-9.jpg" class="w-100 height-auto" alt="user-picture">
+						<div class="port-box">
+						    <div class="port-box-text">
+							    <h4>CARD 2</h4>
+								<h5 class="text-white">Card</h5>
+							    <div class="port-icons">
+								    <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+							        <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>				 
 		        
 				<div class="col-lg-4">
 				    <div class="portfolio mb-3">
@@ -544,7 +586,7 @@
                 </div>
                 </div>
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6">
                 <div class="team-box shadow mb-3 position-relative">
 				  <div class="team-img position-relative">
                     <img src="image/teams/team-1.jpg" class="w-100 height-auto" alt="user-picture">
@@ -562,7 +604,7 @@
                 </div>
             </div>
             </div>			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
                 <div class="team-box shadow mb-3  position-relative">
 				  <div class="team-img  position-relative">
                     <img src="image/teams/team-2.jpg"  class="w-100 height-auto" alt="user-picture">
@@ -579,7 +621,7 @@
                 </div>
             </div>
            </div>			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
                 <div class="team-box shadow mb-3 position-relative">
 				  <div class="team-img position-relative">
                     <img src="image/teams/team-3.jpg"  class="w-100 height-auto" alt="user-picture">
@@ -596,7 +638,7 @@
                 </div>
             </div>
            </div>			
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
                 <div class="team-box shadow mb-3 position-relative">
 				   <div class="team-img position-relative">
                     <img src="image/teams/team-4.jpg" class="w-100 height-auto" alt="user-picture">
@@ -627,7 +669,7 @@
                 </div>
 		</div>
 		<div class="row">
-		    <div class="col-lg-4">
+		    <div class="col-lg-4 col-md-6">
 			    <div class="card mb-3 bg-white shadow border-0">
                 <div class="card-body text-center">
                 <h5 class="card-title">Free</h5>
@@ -643,7 +685,7 @@
                  </div>
                  </div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 			    <div class="card mb-3 bg-primary shadow border-0">
                 <div class="card-body text-center text-white">
                 <h5 class="card-buy text-white">Business</h5>
@@ -659,7 +701,7 @@
                  </div>
                  </div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-6">
 			    <div class="card mb-3 bg-white shadow border-0">
                 <div class="card-body text-center">
                 <h5 class="card-title">Developer</h5>
@@ -678,7 +720,7 @@
         </div>
 	</div>
 </section>		
-<section class="question-section text-center p-3 mb-2 bg-light mt-5">
+<section class="question-section text-center p-3 bg-light mt-5">
     <div class="container">
 	    <div class="row">
 		    <div class="col-lg-12">
@@ -686,12 +728,12 @@
 				<p class="text-primary">Magnam dolores commodi suscript.Neceesaitatibus consequatur ex aliquid fuga eum quidem.sit sint consecteur velit.Quisam quos quisqusm cuplidate. et nemo qui imedit sus cojm sgh  ea.qiua fugait ishn sit officiald quidem hiv quas.</p>
     	    </div>
 		</div>
-		<div class="accordion mb-3" id="accordionExample">
+		<div class="accordion mb-3" id="accordionExample1">
 			    <div class="accordion-item bg-white border-0">
-				    <h2 class="accordion-header text-info" id="headingone">
-				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone"><i class="fa fa-question-circle-o fs-4 px-2" aria-hidden="true"></i> Non consecteur a erat nam at lectus uma duis?</button>
+				    <h2 class="accordion-header text-info" id="headingOne">
+				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-question-circle-o fs-4 px-2 accordion-icon" aria-hidden="true"></i> Non consecteur a erat nam at lectus uma duis?</button>
 				</h2>
-				<div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
 			  	    <p>Feugiat pretium nibh ipsum consequat.Tempus icilius urna id volupat lacus laoret non curabitur gravida.Venenatis lectus magna fringilla urna porttitor rhonus dolor purus non.</p>
 					
@@ -699,58 +741,58 @@
                 </div>	
             </div>
             </div>		
-        <div class="accordion mb-3" id="accordionExample">
-			    <div class="accordion-item">
-				    <h2 class="accordion-header" id="headingone1">
-				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone"><i class="fa fa-question-circle-o fs-4 px-2" aria-hidden="true"></i> Feugiat scelerisque varius morbi enim nunc?</button>
+        
+			    <div class="accordion-item mb-4">
+				    <h2 class="accordion-header" id="headingTwo">
+				    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-question-circle-o fs-4 px-2 accordion-icon" aria-hidden="true"></i> Feugiat scelerisque varius morbi enim nunc?</button>
 				</h2>
-				<div id="collapseone" class="accordion-collapse collapse fade" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
 			  	    <p>Feugiat pretium nibh ipsum consequat.Tempus icilius urna id volupat lacus laoret non curabitur gravida.Venenatis lectus magna fringilla urna porttitor rhonus dolor purus non.</p>
 					
                 </div>
                 </div>	
             </div>
-            </div>		
-        <div class="accordion mb-3" id="accordionExample">
-			    <div class="accordion-item">
-				    <h2 class="accordion-header" id="headingone2">
-				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone"><i class="fa fa-question-circle-o fs-4 px-2" aria-hidden="true"></i> Dolor sit amet consecteur adipiscing elit?</button>
+            
+        
+			    <div class="accordion-item mb-4">
+				    <h2 class="accordion-header" id="headingThree">
+				    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-question-circle-o fs-4 px-2 accordion-icon" aria-hidden="true"></i> Dolor sit amet consecteur adipiscing elit?</button>
 				</h2>
-				<div id="collapseone" class="accordion-collapse collapse fade" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
 			  	    <p>Feugiat pretium nibh ipsum consequat.Tempus icilius urna id volupat lacus laoret non curabitur gravida.Venenatis lectus magna fringilla urna porttitor rhonus dolor purus non.</p>
 					
                 </div>
                 </div>	
             </div>
-            </div>		
-        <div class="accordion mb-3" id="accordionExample">
-			    <div class="accordion-item">
-				    <h2 class="accordion-header" id="headingone3">
-				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone"><i class="fa fa-question-circle-o fs-4 px-2" aria-hidden="true"></i> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</button>
+            	
+       
+			    <div class="accordion-item mb-4">
+				    <h2 class="accordion-header" id="headingFour">
+				    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-question-circle-o fs-4 px-2 accordion-icon" aria-hidden="true"></i> Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</button>
 				</h2>
-				<div id="collapseone" class="accordion-collapse collapse fade" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
 			  	    <p>Feugiat pretium nibh ipsum consequat.Tempus icilius urna id volupat lacus laoret non curabitur gravida.Venenatis lectus magna fringilla urna porttitor rhonus dolor purus non.</p>
 					
                 </div>
                 </div>	
             </div>
-            </div>		
-        <div class="accordion mb-3" id="accordionExample">
-			    <div class="accordion-item">
-				    <h2 class="accordion-header" id="headingone4">
-				    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone"><i class="fa fa-question-circle-o fs-4 px-2" aria-hidden="true"></i> Tortor vitae purus faucibus ornare.Varius vel pharetra vel turpis nunc eget lorem dolor?</button>
+            
+       
+			    <div class="accordion-item mb-4">
+				    <h2 class="accordion-header" id="headingFive">
+				    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-question-circle-o fs-4 px-2 accordion-icon" aria-hidden="true"></i> Tortor vitae purus faucibus ornare.Varius vel pharetra vel turpis nunc eget lorem dolor?</button>
 				</h2>
-				<div id="collapseone" class="accordion-collapse collapse fade " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				<div id="collapseFive" class="accordion-collapse collapse  " aria-labelledby="headingFive" data-bs-parent="#accordionExample1">
                 <div class="accordion-body">
 			  	    <p>Feugiat pretium nibh ipsum consequat.Tempus icilius urna id volupat lacus laoret non curabitur gravida.Venenatis lectus magna fringilla urna porttitor rhonus dolor purus non.</p>
 					
                 </div>
                 </div>	
             </div>
-            </div>					
+            		
 		 <div>
 </section>
 <section class="contact-section mb-5 mt-5">
@@ -798,10 +840,10 @@
                <div class="workers-inputdatas">
 				 <form>
 				   <div class="row">
-					 <div class="col-lg-6">
+					 <div class="col-lg-6 col-md-6 mb-2">
 		                <input type="text"  placeholder="Your Name" class="form-control">
 						</div>
-					   <div class="col-lg-6 mb-3">
+					   <div class="col-lg-6 col-md-6 mb-3">
                         <input type="email" placeholder="Your Email" class="form-control">
 				       </div>
 	                  <div class="col-lg-12">
@@ -824,7 +866,7 @@
 <section class="footer-section mt-5">
      <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-6 ">
 			    <div class="user">
 				<h3 class="fw-normal states mb-3">OnePage</h3>
 		        </div>
@@ -838,7 +880,7 @@
 			      <p class="fw-normal">Email: <span class="text-muted">info@example.com</span></p>
 			   </div>
 				 </div>
-				 <div class="col-lg-2">
+				 <div class="col-lg-2 col-md-6">
 				    <div class="link">
 					   <h4 class="full">Useful Links</h4>
 					   </div>
@@ -851,7 +893,7 @@
 						  <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#" class="mb-3  foot text-decoration-none fs-6">Privacy policy</a></li>
 					   </ul>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-lg-3 col-md-6">
 				      <div class="link">
 					    <h4 class="full">Our Services</h4>
 					      </div>
@@ -863,7 +905,7 @@
 						       <li><i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#" class="mb-3  foot text-decoration-none fs-6">Graphic Design</a></li>
 					        </ul>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-6">
 					  <div class="letter">
 					    <h4 class="news">Our Newsletter</h4>
 						<p class="fs-6 fw-normal">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
@@ -877,12 +919,12 @@
 	    </div>
 	</div>
  </section> 
-<section class="cpy-info bg-light p-4 mt-5">
+<section class="cpy-info bg-light p-4">
    <div class="container">
      <div class="copyright">
 	    <div class="row">
-		    <div class="col-lg-6">
-		        <h5 class="fs-6 fw-normal">Designed by <a href="#" class="text-decoration-none fs-6 fw-normal">Priyadharshini</a></h5>
+		    <div class="col-lg-6 col-sm-6">
+		        <h5 class="fs-6 fw-normal pt-2">Designed by <a href="#" class="text-decoration-none fs-6 fw-normal">Priyadharshini</a></h5>
 	        </div>
 			<div class="col-lg-6">
 			<div class="footer-icons text-end">
