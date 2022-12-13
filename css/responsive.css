@@ -1,0 +1,44 @@
+/*----------------Mobile device---------------------------------*/
+@media (min-width:280px){
+
+}
+@media (max-width:576px) { 
+ .onepage{
+	font-size: 33px;
+	line-height: 1.4;
+	padding:0;
+}
+} 
+/*-------------------------Mobile device landscape and smaller device-----------------*/
+@media (min-width: 576px) {
+
+.nav-bar{
+	padding: 4px 8px;
+}
+ .onepage{
+	  font-size: 30px;
+	  padding: 0;
+  }
+}
+/*------------------------------Medium device---------------------------------*/
+@media (min-width: 768px) {
+  /* .one{
+	  font-size: 30px;
+	  padding: 0;
+  } */
+}
+
+
+/*-----------------------------------Larger device-------------*/
+@media (min-width: 992px) { 
+.onepage{
+	color: #124265;
+	font-size: 60px;
+	line-height: 80px;
+	padding: 18px 164px;
+}
+}
+/*-------------------------------Extra large and desktop device---------------------------------------------*/
+@media (min-width: 1200px){
+	
+}
