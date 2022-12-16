@@ -8,6 +8,12 @@
 	line-height: 1.4;
 	padding:0;
 }
+ .owl-carousel .owl-item img {
+    display: block;  
+    width: 20%;
+	margin: 0 auto;
+   /*  margin-left:92px;  */ 
+} 
 } 
 /*-------------------------Mobile device landscape and smaller device-----------------*/
 @media (min-width: 576px) {
@@ -26,7 +32,15 @@
 	  font-size: 30px;
 	  padding: 0;
   } */
+  .owl-carousel .owl-item img {
+    display: block;  
+    width: 20%;
+	margin: 0 auto;
+   /*  margin-left:250px; */  
+} 
 }
+
+
 
 
 /*-----------------------------------Larger device-------------*/
@@ -37,8 +51,18 @@
 	line-height: 80px;
 	padding: 18px 164px;
 }
+/* .owl-carousel .owl-item img {
+    display: block;  
+    width: 18%;
+    margin-left:250px;  
+}  */
+
 }
 /*-------------------------------Extra large and desktop device---------------------------------------------*/
 @media (min-width: 1200px){
-	
+	.owl-carousel .owl-item img {
+    display: block;  
+    width: 30%;
+    margin-left:100px;  
+} 
 }
